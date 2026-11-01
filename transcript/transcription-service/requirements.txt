@@ -1,0 +1,9 @@
+
+fastapi
+uvicorn[standard]
+faster-whisper
+python-multipart
+pydantic
+pytest
+httpx
+requests

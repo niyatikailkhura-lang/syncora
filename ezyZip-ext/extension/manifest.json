@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TeamOS Meeting Recorder",
+  "version": "1.0.0",
+  "description": "Capture and upload Google Meet audio for TeamOS.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:3001/*",
+    "http://localhost:5000/*",
+    "https://meet.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

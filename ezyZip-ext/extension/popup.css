@@ -1,0 +1,43 @@
+
+body {
+  width: 280px;
+  padding: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8fafc;
+}
+
+h2 {
+  color: #1e293b;
+  font-size: 18px;
+}
+
+#status {
+  color: #64748b;
+  margin: 18px 0;
+}
+
+button {
+  width: 100%;
+  padding: 11px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: #2563eb;
+  color: white;
+}
+
+#stopBtn {
+  background-color: #dc2626;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

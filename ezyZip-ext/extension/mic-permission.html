@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamOS Meeting Recorder</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .recorder {
+      width: 100%;
+      max-width: 420px;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    h1 {
+      color: #1e293b;
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .status {
+      padding: 13px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      color: #475569;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin: 7px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #enableMicBtn {
+      background: #0f766e;
+      color: white;
+    }
+
+    #startBtn {
+      background: #2563eb;
+      color: white;
+    }
+
+    #stopBtn {
+      background: #dc2626;
+      color: white;
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .note {
+      color: #94a3b8;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="recorder">
+
+    <h1>TeamOS Recorder</h1>
+
+    <p class="subtitle">
+      Capture your meeting audio and send it to TeamOS.
+    </p>
+
+    <div class="status" id="status">
+      Status: Waiting to start
+    </div>
+
+    <button id="enableMicBtn">
+      Enable Microphone
+    </button>
+
+    <button id="startBtn" disabled>
+      Start Recording
+    </button>
+
+    <button id="stopBtn" disabled>
+      Stop Recording
+    </button>
+
+    <p class="note">
+      Keep this recorder page open while your meeting is being recorded.
+      Make sure participants know that the meeting is being recorded.
+    </p>
+
+  </main>
+
+  <script src="mic-permission.js"></script>
+
+</body>
+</html>
